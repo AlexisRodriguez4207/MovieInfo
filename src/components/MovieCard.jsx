@@ -2,7 +2,7 @@ import "../styles/MovieCard.css";
 import { Link } from "react-router-dom";
 
 export function MovieCard({ movie }) {
-  const imageUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
+  const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
   return (
     <li className="movieCard">
       <Link to={"/details/" + movie.id}>
@@ -13,8 +13,8 @@ export function MovieCard({ movie }) {
           alt={movie.title}
           className="movieImage"
         />
-        <div>{movie.title}</div>
       </Link>
+      <div>{movie.title}</div>
     </li>
   );
 }

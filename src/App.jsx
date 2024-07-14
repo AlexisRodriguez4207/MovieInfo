@@ -6,7 +6,7 @@ function App() {
     <>
       <div>
         <header>
-          <h1 className="tittle">🎬 Movies Info</h1>
+          <h1 className="title">🎬 Movies Info</h1>
         </header>
         <MyRoutes />
       </div>
